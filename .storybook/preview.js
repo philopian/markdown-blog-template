@@ -3,6 +3,7 @@ import 'prismjs/themes/prism-okaidia.css'
 import 'tailwindcss/tailwind.css'
 
 import '../styles/globals.css'
+import './tailwindcss.css'
 
 const OriginalNextImage = NextImage.default
 

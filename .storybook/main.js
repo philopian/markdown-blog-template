@@ -2,12 +2,7 @@ const path = require('path')
 
 module.exports = {
   typescript: { reactDocgen: false },
-  stories: [
-    '../stories/**/*.stories.mdx',
-    '../stories/**/*.stories.@(js|jsx|ts|tsx)',
-    '../components/**/*.stories.mdx',
-    '../components/**/*.stories.@(js|jsx|ts|tsx)',
-  ],
+  stories: ['../stories/**/*.stories.mdx', '../stories/**/*.stories.@(js|jsx|ts|tsx)'],
   staticDirs: ['../public'],
   addons: [
     '@storybook/addon-links',
@@ -38,6 +33,13 @@ module.exports = {
       '@': [path.resolve(__dirname, '../stories/'), path.resolve(__dirname, '../')],
       '@/components': path.resolve(__dirname, '../components/'),
       '@/pages': path.resolve(__dirname, '../pages/'),
+      '@/hooks': path.resolve(__dirname, '../hooks/'),
+      '@/styles': path.resolve(__dirname, '../styles/'),
+      '@/libs': path.resolve(__dirname, '../libs/'),
+      '@/layouts': path.resolve(__dirname, '../layouts/'),
+      '@/models': path.resolve(__dirname, '../models/'),
+      '@/utils': path.resolve(__dirname, '../utils/'),
+      '@/types': path.resolve(__dirname, '../types/'),
     }
 
     /**
