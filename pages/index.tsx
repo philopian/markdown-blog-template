@@ -2,10 +2,12 @@ import type { NextPage } from 'next'
 
 import styles from '../styles/Home.module.css'
 
+import WelcomeHero from '@/components/WelcomeHero'
+
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
-      <div className="text-cyan-500">Tailwindcss is wired up!!</div>
+      <WelcomeHero />
     </div>
   )
 }
