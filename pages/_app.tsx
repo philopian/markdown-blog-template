@@ -1,5 +1,6 @@
 import { ThemeProvider } from 'next-themes'
 import type { AppProps } from 'next/app'
+import 'prismjs/themes/prism-okaidia.css'
 import 'tailwindcss/tailwind.css'
 
 import Body from '@/components/Body'
@@ -10,13 +11,11 @@ import '@/styles/globals.css'
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider enableSystem={true} attribute="class">
-      <div>
-        <Header />
-        <Body>
-          <Component {...pageProps} />
-        </Body>
-        <Footer />
-      </div>
+      <Header />
+      <Body>
+        <Component {...pageProps} />
+      </Body>
+      <Footer />
     </ThemeProvider>
   )
 }
