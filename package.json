@@ -11,8 +11,11 @@
     "test:once": "jest --colors",
     "pretest:coverage": "jest --colors --collectCoverage=true",
     "test:coverage": "npx http-server coverage/lcov-report",
-    "storybook": "start-storybook -p 6006",
     "serve": "npm run build && serve out",
+    "test:e2e": "playwright test",
+    "test:e2e:debug": "PWDEBUG=1 playwright test --project=chromium",
+    "test:e2e:headed": "playwright test --headed",
+    "storybook": "start-storybook -p 6006",
     "storybook:build": "build-storybook"
   },
   "dependencies": {
@@ -25,6 +28,7 @@
   "devDependencies": {
     "@babel/core": "^7.17.5",
     "@headlessui/react": "^1.5.0",
+    "@playwright/test": "^1.19.2",
     "@storybook/addon-actions": "^6.4.19",
     "@storybook/addon-essentials": "^6.4.19",
     "@storybook/addon-interactions": "^6.4.19",
