@@ -13,7 +13,7 @@
     "test:coverage:generate": "jest --collectCoverage=true",
     "test:coverage": "jest --watchAll --collectCoverage=true",
     "test:coverage:watch": "npm-run-all --parallel test:coverage:serve test:coverage ",
-    "test:coverage:serve": "npx http-server -p=3003 coverage/lcov-report",
+    "test:coverage:serve": "PORT=3003 npx serve coverage/lcov-report",
     "serve": "npm run build && serve out",
     "test:e2e": "playwright test",
     "test:e2e:debug": "PWDEBUG=1 playwright test --project=chromium",
