@@ -7,10 +7,13 @@ type Props = {
   posts: Posts[]
 }
 
+const text =
+  ' Wolf quinoa pop-up copper mug ramps tattooed master cleanse yuccie. Roof party before they sold out offal selvage microdosing hexagon.'
+
 export default function Home({ posts }: Props) {
   return (
     <div className="flex flex-col max-w-6xl mx-auto">
-      <WelcomeHero />
+      <WelcomeHero title="Single-origin blogging!" text={text} />
       <PostsSection posts={posts} />
     </div>
   )

@@ -22,9 +22,17 @@ export default function ThemeToggler({ className = '' }) {
     const currentTheme = theme === 'system' ? systemTheme : theme
 
     if (currentTheme === 'dark') {
-      return <SunIcon className={sun} role="button" onClick={() => setTheme('light')} />
+      return (
+        <div onClick={() => setTheme('light')} role="button" data-testid="sun-icon">
+          <SunIcon className={sun} />
+        </div>
+      )
     }
-    return <MoonIcon className={moon} role="button" onClick={() => setTheme('dark')} />
+    return (
+      <div onClick={() => setTheme('dark')} role="button" data-testid="moon-icon">
+        <MoonIcon className={moon} />
+      </div>
+    )
   }
 
   return (

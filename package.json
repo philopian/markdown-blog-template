@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "prettier --write {components,pages}/**/*.tsx {components,pages}/*.tsx utils/**/*.ts",
+    "new:component": "node tools/new-component.js",
     "test": "jest --watchAll --collectCoverage=false",
     "test:once": "jest --colors",
     "pretest:coverage": "jest --colors --collectCoverage=true",
