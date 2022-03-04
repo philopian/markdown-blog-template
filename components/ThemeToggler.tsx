@@ -8,9 +8,15 @@ const container = 'px-4 sm:px-6 py-4 flex justify-between items-center'
 const sun = 'w-10 h-10 text-yellow-500'
 const moon = 'w-10 h-10 text-gray-900'
 
-export default function ThemeToggler({ className = '' }) {
+type Props = {
+  className?: string
+}
+export default function ThemeToggler({ className }: Props) {
   const { systemTheme, theme, setTheme } = useTheme()
   const [mounted, setMounted] = useState(false)
+
+  const handleSetLightTheme = () => setTheme('light')
+  const handleSetDarkTheme = () => setTheme('dark')
 
   useEffect(() => {
     setMounted(true)
@@ -23,13 +29,13 @@ export default function ThemeToggler({ className = '' }) {
 
     if (currentTheme === 'dark') {
       return (
-        <div onClick={() => setTheme('light')} role="button" data-testid="sun-icon">
+        <div onClick={handleSetLightTheme} role="button" data-testid="sun-icon">
           <SunIcon className={sun} />
         </div>
       )
     }
     return (
-      <div onClick={() => setTheme('dark')} role="button" data-testid="moon-icon">
+      <div onClick={handleSetDarkTheme} role="button" data-testid="moon-icon">
         <MoonIcon className={moon} />
       </div>
     )

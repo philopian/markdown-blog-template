@@ -9,7 +9,10 @@ module.exports = {
   testRegex: '(/(components?|hooks?|utils?|pages?)/.*.(test|spec)).(jsx?|tsx?)$',
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
   collectCoverage: true,
-  collectCoverageFrom: ['<rootDir>/{components,hooks,utils,pages}/**/*.{ts,tsx}'],
+  collectCoverageFrom: [
+    '<rootDir>/{components,hooks,utils}/**/*.{ts,tsx}',
+    '!<rootDir>/utils/mdx.ts',
+  ],
   coverageDirectory: '<rootDir>/coverage/',
   coveragePathIgnorePatterns: ['(tests/.*.mock).(jsx?|tsx?)$', '(.*).d.ts$'],
   moduleNameMapper: {
