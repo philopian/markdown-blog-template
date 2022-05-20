@@ -7,8 +7,11 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout 🛎️
+      - name: Checkout 🚩
         uses: actions/checkout@v3.0.2
+
+      - name: Install 🛎️
+        uses: yarn
 
       - name: Lint 🧹
         run: yarn lint
