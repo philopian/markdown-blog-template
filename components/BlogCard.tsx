@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Link from 'next/link'
 
 import { Post } from '@/types/index'
@@ -9,7 +8,7 @@ export default function BlogCard({ image, slug, title, summary, tags }: Post) {
       <div className="overflow-hidden rounded-xl">
         <Link href={`/posts/${slug}`}>
           <a className="cursor-pointer" data-testid="image-link">
-            <Image src={image} width={800} height={533} layout="responsive" alt="cover image" />
+            <img src={image} width={800} height={533} alt="cover image" />
           </a>
         </Link>
       </div>
