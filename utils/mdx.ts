@@ -18,7 +18,7 @@ export async function getFileBySlug(slug: string) {
 
   const { code, frontmatter } = await bundleMDX({
     source,
-    xdmOptions: (options) => {
+    mdxOptions: (options) => {
       options.rehypePlugins = [
         ...(options?.rehypePlugins ?? []),
         rehypeSlug,

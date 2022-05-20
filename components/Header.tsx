@@ -1,16 +1,16 @@
 import { CubeIcon } from '@heroicons/react/solid'
-import cn from 'classnames'
+import cx from 'classnames'
 import Head from 'next/head'
 import Link from 'next/link'
 
 import ThemeToggler from '@/components/ThemeToggler'
 import styles from '@/styles/Home.module.css'
 
-function HiddenIcon() {
+function HiddenIcon({}) {
   return <CubeIcon className="w-10 h-10 " style={{ color: 'rgba(0,0,0,0)' }} />
 }
 
-export default function Header() {
+export default function Header({}) {
   return (
     <>
       <Head>
@@ -19,7 +19,7 @@ export default function Header() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header className={cn(styles.header, 'dark:bg-black dark:text-white')}>
+      <header className={cx(styles.header, 'dark:bg-black dark:text-white')}>
         <HiddenIcon />
         <Link href="/">Header</Link>
         <ThemeToggler />

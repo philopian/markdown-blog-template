@@ -1,9 +1,9 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-import { Posts } from '@/types/index'
+import { Post } from '@/types/index'
 
-export default function BlogCard({ image, slug, title, summary, tags }: Posts) {
+export default function BlogCard({ image, slug, title, summary, tags }: Post) {
   return (
     <div className="flex flex-col p-3 space-y-5 bg-white shadow-lg rounded-xl dark:bg-gray-800">
       <div className="overflow-hidden rounded-xl">

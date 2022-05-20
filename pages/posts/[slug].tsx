@@ -7,7 +7,7 @@ import { getFiles, getFileBySlug } from '@/utils/mdx'
 
 // *NOTE: In order to load React components in the MDX files you need to pass them in
 function Hello() {
-  return <div>I'm a React Component!!</div>
+  return <div>I&apos;m a React Component!!</div>
 }
 
 const MdxComponentList = { Hello }

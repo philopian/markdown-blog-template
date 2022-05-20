@@ -1,10 +1,10 @@
 import BlogCard from '@/components/BlogCard'
 import WelcomeHero from '@/components/WelcomeHero'
-import { Posts } from '@/types/index'
+import { Post } from '@/types/index'
 import { getAllFilesFrontMatter } from '@/utils/mdx'
 
 type Props = {
-  posts: Posts[]
+  posts: Post[]
 }
 
 const text =

@@ -6,6 +6,6 @@ export type FrontMatter = {
   tags: string[]
 }
 
-export type Posts = FrontMatter & {
+export type Post = FrontMatter & {
   slug: string
 }

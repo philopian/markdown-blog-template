@@ -1,5 +1,5 @@
 import { SunIcon, MoonIcon } from '@heroicons/react/solid'
-import cs from 'classnames'
+import cx from 'classnames'
 import { useTheme } from 'next-themes'
 import { useState, useEffect } from 'react'
 
@@ -42,7 +42,7 @@ export default function ThemeToggler({ className }: Props) {
   }
 
   return (
-    <div className={cs(wrapper, className)}>
+    <div className={cx(wrapper, className)}>
       <div className={container}>{renderThemeChanger()}</div>
     </div>
   )
