@@ -1,8 +1,9 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react'
 import React from 'react'
 
+import image from '../public/assets/images/grey.jpeg'
+
 import BlogCard from '@/components/BlogCard'
-import { Post } from '@/types/index'
 
 export default {
   title: 'Components/BlogCard',
@@ -20,6 +21,6 @@ Primary.args = {
   title: 'sdfsdfsd',
   publishedAt: '',
   summary: '...',
-  image: '.',
+  image: String(image),
   tags: [],
 }
