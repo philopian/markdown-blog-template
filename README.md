@@ -13,6 +13,5 @@
   - `next-themes` allow for light/dark modes
 - `typescript` for types
 - `prettier` & `eslint` for linting
-- `tailwindcss@latest` for styling our blog.
 - `vitest` for unit testing
 - `playwright` for e2e

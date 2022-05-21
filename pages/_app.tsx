@@ -1,7 +1,6 @@
 import { ThemeProvider } from 'next-themes'
 import type { AppProps } from 'next/app'
 import 'prismjs/themes/prism-okaidia.css'
-import 'tailwindcss/tailwind.css'
 
 import Body from '@/components/Body'
 import Footer from '@/components/Footer'

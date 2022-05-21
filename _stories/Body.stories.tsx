@@ -13,6 +13,6 @@ export default {
 
 const Template: ComponentStory<typeof Body> = (args) => <Body {...args} />
 
-export const Primary = Template.bind({})
+export const Default = Template.bind({})
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
-Primary.args = {}
+Default.args = {}

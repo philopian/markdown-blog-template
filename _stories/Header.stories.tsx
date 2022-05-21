@@ -14,10 +14,6 @@ export default {
 
 const Template: ComponentStory<typeof Header> = (args) => <Header {...args} />
 
-export const LoggedIn = Template.bind({})
-LoggedIn.args = {
-  className: 'text-blue-600',
-}
-
-export const LoggedOut = Template.bind({})
-LoggedOut.args = {}
+export const Default = Template.bind({})
+// More on args: https://storybook.js.org/docs/react/writing-stories/args
+Default.args = {}

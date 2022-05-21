@@ -22,7 +22,11 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
   },
-  "[html]": {
-    "editor.defaultFormatter": "vscode.html-language-features"
-  },
+  // "[html]": {
+  //   "editor.defaultFormatter": "vscode.html-language-features"
+  // },
+  // "[css]": {
+  //   "editor.defaultFormatter": "beautify.format",
+  //   "editor.formatOnSave": true
+  // },
 }

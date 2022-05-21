@@ -13,9 +13,9 @@ export default {
 
 const Template: ComponentStory<typeof WelcomeHero> = (args) => <WelcomeHero {...args} />
 
-export const Primary = Template.bind({})
+export const Default = Template.bind({})
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
-Primary.args = {
+Default.args = {
   title: 'some title',
   text: 'some text',
 }

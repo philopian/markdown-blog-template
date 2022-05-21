@@ -7,7 +7,7 @@ import ThemeToggler from '@/components/ThemeToggler'
 import styles from '@/styles/Home.module.css'
 
 function HiddenIcon({}) {
-  return <CubeIcon className="w-10 h-10 " style={{ color: 'rgba(0,0,0,0)' }} />
+  return <CubeIcon className={styles.cubeIcon} />
 }
 
 export default function Header({}) {
@@ -19,7 +19,7 @@ export default function Header({}) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header className={cx(styles.header, 'dark:bg-black dark:text-white')}>
+      <header className={cx(styles.header)}>
         <HiddenIcon />
         <Link href="/">Header</Link>
         <ThemeToggler />
